@@ -4,7 +4,11 @@
 
 ### How the Time Complexity changes from O(2^N) --> O(n^2) --> O(n*log n) 
 
+
+
 ![Sum the Difference 1](img/Sum%20the%20difference%201.jpg)
+
+![Sum the Difference 1](img/Sum%20the%20difference%202.jpg)
 
 
 
