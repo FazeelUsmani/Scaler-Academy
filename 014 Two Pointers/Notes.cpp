@@ -102,3 +102,59 @@ int main(){
     return 0;
 }
 
+                                                  
+                                                  
+ 
+                                                 \
+                                                 
+4) Given an unsorted array find a pair i, j such that the subarray sum is equal to k  
+
+A = [1,3,15,10,20,23,3]
+k = 48
+                                                  
+Output: 
+   i,j = 1,4  because 3+15+10+20 = 48                                                  
+                                                  
+How to do?
+i) prefix sum of the given array will be sorted as the array contains only +ve elements
+ii) Then find P[j] - P[i] = k
+
+Prefix sum calculation in new array takes space O(n)
+Instead you can prefix sum in the given array itself which takes O(1) space
+
+But what if we calculate the sum of subarray on the fly?
+I mean just include an end element of subarray if sum < k else exclude starting element of subarray
+Take care of the stopping condition as well. 
+                                                  
+                                                  
+                                                  
+                                                  
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    
+    
+    int A[10] = {1,3,15,10,20,23,3};
+    int j = -1, i = 0, sum = 0;
+    int k = 48;
+
+    while (j != sizeof(A)/sizeof(int)){
+        
+        if (sum < k){
+            j++;
+            sum += A[j];
+        }
+        else if (sum > k){
+            sum -= A[i];
+            i++;
+        }
+        else{
+            cout<<"Subset is from "<< i <<" to "<< j;
+            break;
+        }
+        
+    }
+
+    return 0;
+}
