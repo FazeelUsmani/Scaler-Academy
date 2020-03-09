@@ -158,3 +158,22 @@ int main(){
 
     return 0;
 }
+
+                                                  
+                                                  
+                                                  
+                                                  
+5) Given an unsorted array, elements can ve negative check if there exists a sub array with given sum or not?
+
+Prefix array won't work because the elements are negative. Adding a -ve element to the sum decreases the value.
+Hence the array will not be sorted. So,  we can't implement 2 pointers if we use this approach.
+                                                  So, what to do?
+                                                  
+                                                
+What if we sort the prefix sum array? This works because we just need to check there exists a pair i, j or not.
+                                                  
+                                                  T.C: O(nlogn)
+                                                  
+                                                  
+                                                  
+                                                  
