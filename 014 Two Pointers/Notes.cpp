@@ -170,7 +170,9 @@ Hence the array will not be sorted. So,  we can't implement 2 pointers if we use
                                                   So, what to do?
                                                   
                                                 
-What if we sort the prefix sum array? This works because we just need to check there exists a pair i, j or not.
+What if we sort the prefix sum array? And find the sum P[j] - P[i] == k. This works because we just need to 
+check there exists a pair i, j or not.
+                                                  
                                                   
                                                   T.C: O(nlogn)
                                                   
