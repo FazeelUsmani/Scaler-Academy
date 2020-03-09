@@ -6,10 +6,13 @@
 
 Read about [Horner's formula](https://en.wikipedia.org/wiki/Horner%27s_method) before proceeding further
 
+![Sum the Difference 1](img/Sum%20the%20difference.jpg)
 
 ![Sum the Difference 1](img/Sum%20the%20difference%201.jpg)
 
 ![Sum the Difference 1](img/Sum%20the%20difference%202.jpg)
+
+
 
 
 
