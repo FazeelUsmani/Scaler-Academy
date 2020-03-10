@@ -25,7 +25,7 @@ Time Complexity for generating all the permutations is O(N! x N) --> __O(N!)__
 3) Stability (Asked in Amazon MCQ's)
 4) Inplace
 
-
+<br />
 
 
 | __Sorting Algorithm__ |      __Time Complexity__       | __Space Complexity__ | __Inplace__ | __Stable__ |
@@ -37,6 +37,7 @@ Time Complexity for generating all the permutations is O(N! x N) --> __O(N!)__
 |<p align = "center"> Merge Sort </p>| <p align = "center"> O(NLog N)</p>|<p align = "center"> O(N)</p>|<p align = "center"> No</p>|    <p align = "center"> No</p>|
 |<p align = "center"> Quick Sort </p>| <p align = "center"> O(NLog N)</p>|<p align = "center"> O(Log N)</p>|<p align = "center"> No</p>| <p align = "center"> No </p>|
 
+<br /> <br />
 
 ### How to maintain stability?
 
@@ -47,6 +48,7 @@ Time Complexity for generating all the permutations is O(N! x N) --> __O(N!)__
 |<p align = "center"> Bubble Sort </p>| <p align = "center"> Use < instead of <= </p>|
 |<p align = "center"> Count Sort </p>| <p align = "center">Read array from R --> L instead of L --> R </p>|
 
+<br /> <br />
 
 ### Applications:
 
@@ -56,7 +58,9 @@ Time Complexity for generating all the permutations is O(N! x N) --> __O(N!)__
 |<p align = "center"> Selection Sort </p>| <p align = "center"> Use when swapping operation is costly </p>|
 |<p align = "center"> Bubble Sort </p>| <p align = "center"> Use when you're not allowed to swap distant elements </p>|
 |<p align = "center"> Count Sort </p>| <p align = "center"> Don't use for sparsely distributed array <br /> Use only when you know the min, max element <br /> 1 <= n <= 10^8 ,  1 <= k <=10^2 Use count sort <br /> n < 10^5, k <= 10^9 Go for Merge or Quick sort </p>|
+|<p align = "center"> Merge Sort </p>| <p align = "center"> * Sorting Linked List in O(nlog n) time <br /> * Inversion count problem <br /> * Used in external sorting</p>|
 
+<br />
+<br />
 
-
-
+For __Quick Sort__, you can use Lomuto or Hoares for partitioning
