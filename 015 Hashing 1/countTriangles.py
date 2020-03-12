@@ -8,7 +8,7 @@
 
 # Note: The answer may be large so return the answer modulo (10^9 + 7).
 
-<a href="https://www.interviewbit.com/problems/count-right-triangles/">Problem on InterviewBit</a>
+# Here is the link of the problem on InterviewBit: https://www.interviewbit.com/problems/count-right-triangles
 
 
 
