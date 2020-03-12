@@ -123,3 +123,32 @@ print(largestSubarraySum(arr, k))
 
 _______________________________________________________________________________________________________
 
+
+# 4) Given an array, find special pair a[i], a[j] such that a[i] == a[j] and |i-j] is minimum. 
+# You need to return i, j and the min distance
+
+
+arr = [2,4,6,2,3,2,3]
+
+def specialPair(arr):
+
+  dict = {}
+  n = len(arr)
+  minDist = 9999
+
+  for i in range(n):
+    if arr[i] in dict:
+
+      minDist = min(minDist, i-dict[ arr[i] ])
+      i_idx = dict[ arr[i] ]
+      j_idx = i
+      dict[ arr[i] ] = i
+
+    else:
+      dict[ arr[i] ] = i
+
+  return i_idx, j_idx, minDist
+
+print(specialPair(arr))
+
+_______________________________________________________________________________________________________
