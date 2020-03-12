@@ -90,7 +90,36 @@ print(subarray1(arr))
 _______________________________________________________________________________________________________
 
 
+# 3) Given an array, find the length of the largest subarray sum = k
 
 
+arr = [12, -8, 4, -6, 3, 2, 2, -2]
+k = 1
 
+def largestSubarraySum(arr, k):
+  n = len(arr)
+  pre = arr[0]
+
+  if k-pre == arr[0]:
+    maxLength = 1
+  else:
+    maxLength = 0
+
+  dict = {}
+  dict[ arr[0] ] = 0
+
+  for i in range(1, n):
+    pre += arr[i]
+
+    if (k-pre) in dict:
+      maxLength = max(maxLength, i-dict[k-pre]+1)
+    else:
+      dict[ arr[i] ] = i
+
+  return maxLength
+
+print(largestSubarraySum(arr, k))
+
+
+_______________________________________________________________________________________________________
 
