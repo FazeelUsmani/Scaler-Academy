@@ -1,3 +1,5 @@
+// Implementing push, pop, top, size, isEmpty and isFull functions of stack
+
 
 #include <cstdlib>
 #include <iostream>
@@ -85,7 +87,7 @@ int main(){
     st.push(1);
 
     cout<<endl;
-    
+
     cout<< " Top element is "<<st.peek()<<" ";
     cout<< " Stack Size is "<<st.size()<<endl;
 
@@ -94,9 +96,13 @@ int main(){
     cout<< " Stack Size is "<<st.size()<<endl;
 
     while (!st.isEmpty())
-        cout<<st.pop()<<endl;
+        st.pop();
 
-    cout<<st.isEmpty();
+    if (st.isEmpty())
+        cout<<"Stack is empty";
+    else
+        cout<<"Stack is not empty"
+    
 
    
     return 0;
