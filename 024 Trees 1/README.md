@@ -1,1 +1,1 @@
-This folder contain all the homework and assignments for this topic
+This folder contain all the solved homework and assignment problems for this topic
