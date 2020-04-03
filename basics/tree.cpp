@@ -16,3 +16,13 @@ int main(){
     
     return 0;
 }
+
+
+/*
+This code creates the following tree
+    
+          10
+      20      30 
+   40   50  60   70
+
+*/
