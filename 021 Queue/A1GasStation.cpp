@@ -20,6 +20,32 @@ Input 1:
 Output 1:
     1
     Explanation 1:
-        If you start from index 0, you can fill in A[0] = 1 amount of gas. Now your tank has 1 unit of gas. But you need B[0] = 2 gas to travel to station 1. 
-        If you start from index 1, you can fill in A[1] = 2 amount of gas. Now your tank has 2 units of gas. You need B[1] = 1 gas to get to station 0. So, you travel to station 0 and still have 1 unit of gas left over. You fill in A[0] = 1 unit of additional gas, making your current gas = 2. It costs you B[0] = 2 to get to station 1, which you do and complete the circuit. 
+        If you start from index 0, you can fill in A[0] = 1 amount of gas.
+        Now your tank has 1 unit of gas. But you need B[0] = 2 gas to travel to station 1. 
+        
+        If you start from index 1, you can fill in A[1] = 2 amount of gas.
+        Now your tank has 2 units of gas. You need B[1] = 1 gas to get to station 0.
+        So, you travel to station 0 and still have 1 unit of gas left over. 
+        You fill in A[0] = 1 unit of additional gas, making your current gas = 2. 
+        It costs you B[0] = 2 to get to station 1, which you do and complete the circuit. 
         */
+
+
+int Solution::canCompleteCircuit(const vector<int> &A, const vector<int> &B) {
+    
+    int tank = 0, start = 0, deficiency = 0;
+    
+    for (int i = 0; i < A.size(); i++){
+        
+        tank +=  A[i] - B[i];
+        
+        if (tank < 0){
+            start = i+1;
+            deficiency += tank;
+            tank = 0;
+        }
+    }
+    
+    return (deficiency + tank < 0) ? -1 : start;
+}
+
