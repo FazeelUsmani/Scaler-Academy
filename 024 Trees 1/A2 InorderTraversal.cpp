@@ -48,3 +48,29 @@ vector<int> Solution::inorderTraversal(TreeNode* A) {
     
     return ans;
 }
+
+
+// Aliter:
+vector<int> Solution::inorderTraversal(TreeNode* A) {
+    
+    stack<TreeNode *> s;
+    TreeNode *curr = A;
+    vector<int> ans;
+    
+    while (!s.empty() || curr != NULL){
+        
+        if (curr != NULL){
+            s.push(curr);
+            curr = curr->left;
+        }
+        else{
+            TreeNode *temp = s.top();
+            s.pop();
+            ans.push_back(temp->val);
+            curr = temp->right;
+        }
+    }
+    
+    return ans;
+}
+
