@@ -1,3 +1,4 @@
+/*
 Swap elements
 Problem Description
 Given an integer array A of size N. In the array, you can swap (A[i],A[j]) if the following conditions are satisfied:
@@ -38,7 +39,7 @@ For first query idx=5 and K=1. You can only swap element which is at index 1 (si
 For second query idx=4 and K=1. You can swap element which is at index 1 or 2 (since 1 and 2 are the divisor of 4 less than 4).
 For third query idx=4 and K=0. You cannot swap any element since K=0.
 
-
+*/
 
 
 vector<int> Solution::solve(vector<int> &A, vector<vector<int> > &B) {
