@@ -5,3 +5,4 @@ First refer [Binary tree implementation using 2d array](https://github.com/Fazee
 In the above image you can look how the matrix looks after inserting 10, 6, 2, 18, 19, 15 in the BST.
 By implementing trie in such manner helps you to process the trie earlier and also the dynamic allocation is too slow to process.
 
+Refer [01 TRIE_best](https://github.com/FazeelUsmani/Scaler-Academy/blob/master/028%20Tries/01%20TRIE_best.cpp) for the fastest implementation of TRIE
