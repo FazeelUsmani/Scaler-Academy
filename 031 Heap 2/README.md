@@ -35,3 +35,13 @@ ________________________________________________________________________________
 3. Huffman Algorithm
 4. Heap Sort
 
+__________________________________________________________________________________________
+
+## Some standard problems:
+
+1. Sort K-Sorted Array
+2. Buy Maximum items with Given Sum
+3. K Largest Elements
+4. Merge K-Sorted Arrays
+5. Median of a Stream
+
