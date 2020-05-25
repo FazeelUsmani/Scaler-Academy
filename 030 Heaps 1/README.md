@@ -10,7 +10,9 @@ __decrease key/update key:__ O(log (h))    go on swapping with largest parents t
 
 __Delete:__ We can do this in 2 steps: DecreaseKey (3, INT_MIN) and extract Min   TC: O(log N)
 
-__Build Heap:__ Insert ele and then Min Heapify for all
+__Build Heap:__ Insert ele and then Min Heapify for all. TC: O(n)
+
+![Build Heap Proof](https://github.com/FazeelUsmani/Scaler-Academy/blob/master/030%20Heaps%201/IMG_20200525_224809.jpg)
 
 
 
