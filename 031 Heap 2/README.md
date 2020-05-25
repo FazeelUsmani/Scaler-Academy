@@ -8,6 +8,8 @@ priority_queue<int> pq(arr, arr+3);    // For vector pass v.begin(), v.end() <br
 Syntax: priority_queue<int, vector<int>, greater<int>> pq;<br />
 Syntax for conversion of already existing array: <br />
 you can use the same syntax but multiply with -1 to all elements in the array while building heap and printing it out<br />  
+
+```cpp    
 int arr[] = {10, 15, 4}; <br /> 
 for (int &x : arr) <br /> 
     x = -x; <br /> 
@@ -18,8 +20,7 @@ while (!pq.empty()){ <br />
 } <br /> 
 <br /> 
 priority_queue<int> pq(arr, arr+3);    // For vector pass v.begin(), v.end() <br />
-
-
+```
 __________________________________________________________________________________________
 
 ### Creating heap of pairs:
