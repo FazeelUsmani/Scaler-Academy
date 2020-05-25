@@ -10,16 +10,15 @@ Syntax for conversion of already existing array: <br />
 you can use the same syntax but multiply with -1 to all elements in the array while building heap and printing it out<br />  
 
 ```cpp    
-int arr[] = {10, 15, 4}; <br /> 
-for (int &x : arr) <br /> 
-    x = -x; <br /> 
-priority_queue<int> pq(arr, arr+3);    // For vector pass v.begin(), v.end() <br /> 
-while (!pq.empty()){ <br /> 
-    cout<<-pq.top()<<" "; <br /> 
-    pq.pop(); <br /> 
-} <br /> 
-<br /> 
-priority_queue<int> pq(arr, arr+3);    // For vector pass v.begin(), v.end() <br />
+int arr[] = {10, 15, 4}; 
+for (int &x : arr)  
+    x = -x; 
+priority_queue<int> pq(arr, arr+3);    // For vector pass v.begin(), v.end()
+while (!pq.empty()){ 
+    cout<<-pq.top()<<" ";
+    pq.pop(); 
+} 
+priority_queue<int> pq(arr, arr+3);    // For vector pass v.begin(), v.end()
 ```
 __________________________________________________________________________________________
 
