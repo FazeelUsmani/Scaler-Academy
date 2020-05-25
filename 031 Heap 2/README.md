@@ -25,3 +25,13 @@ ________________________________________________________________________________
 ### Creating heap of pairs:
 By default it considers the first element while creating a MAX/MIN heap. <br />
 If you want to use 2nd element then you need to write your own custom comparator function <br />
+
+__________________________________________________________________________________________
+
+## Applications:
+
+1. Dijkstra Algorithm
+2. Prim's Algorithm
+3. Huffman Algorithm
+4. Heap Sort
+
