@@ -19,3 +19,9 @@ while (!pq.empty()){ <br />
 <br /> 
 priority_queue<int> pq(arr, arr+3);    // For vector pass v.begin(), v.end() <br />
 
+
+__________________________________________________________________________________________
+
+### Creating heap of pairs:
+By default it considers the first element while creating a MAX/MIN heap. <br />
+If you want to use 2nd element then you need to write your own custom comparator function <br />
