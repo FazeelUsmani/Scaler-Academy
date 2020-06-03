@@ -7,10 +7,8 @@ int *dp;
 int fib(int n){
     if (dp[n] == -1){
         int res;
-        if (n <= 0)
-            res = 0;
-        else if (n == 1)
-            res = 1;
+        if (n == 0 || n == 1)
+            return n;
         else
             res = fib(n-1)+fib(n-2);
         dp[n] = res;
