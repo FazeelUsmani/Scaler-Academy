@@ -1,4 +1,4 @@
-*/
+/*
 Regular Expression Match
 
 Problem Description
@@ -58,7 +58,7 @@ Explanation 2:
 
  '?' matches any single character. First two character in string A will be match. 
  But the last character i.e 'z' != 'a'. Return 0.
- /*
+ */
  
  int Solution::isMatch(const string s, const string p) {
     
