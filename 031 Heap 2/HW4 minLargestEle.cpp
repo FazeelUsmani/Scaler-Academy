@@ -68,6 +68,8 @@ Explanation 2:
 
 */
 
+// TC: O(N + B*log N)
+
 int Solution::solve(vector<int> &a, int b)
 {
     
