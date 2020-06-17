@@ -1,6 +1,6 @@
 ## Mathematics - Modulus
 
-### ncr%p - p is a prime number
+### ncr % p (where p is a prime number)
 
 For n choose r mod p, use [Fermat's Little Theorem](https://www.britannica.com/science/Fermats-theorem#:~:text=Fermat's%20theorem%2C%20also%20known%20as,exactly%20into%20ap%20%E2%88%92%20a.)
 
@@ -9,7 +9,7 @@ __T.C: O(N)   S.C: O(1)__
 ![ncr](https://github.com/FazeelUsmani/Scaler-Academy/blob/master/005%20Math%203%20Mod/img/IMG_20200618_003533__01.jpg)
 
 
-### ncr%m - m is any number (not necessarily prime) 
+### ncr % m [where m is any number (not necessarily prime)]
 
 For n choose r mod m, we need to find out all combinations over r. As there are many overlapping sub problems here use Dynamic Programming
 __T.C: O(N * R)   S.C: O(N * R)__
