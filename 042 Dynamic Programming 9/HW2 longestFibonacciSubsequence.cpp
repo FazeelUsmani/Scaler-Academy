@@ -71,6 +71,7 @@ int Solution::solve(vector<int> &A) {
     if (n < 3)
         return 0;
         
+    // In worst case log(M) searches to get next required element, M is max element in A
     unordered_set<int> isExist (A.begin(), A.end());
     int x, y, ans = 0;
     
@@ -89,5 +90,6 @@ int Solution::solve(vector<int> &A) {
         }
     }
     
+    // WHen the length of sequence is < 3 then it's not a fibonacci subsequence. You need atleast 3 numbers
     return (ans > 2) ? ans : 0;
 }
