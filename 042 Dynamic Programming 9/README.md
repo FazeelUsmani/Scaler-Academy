@@ -1,1 +1,6 @@
-This folder contains all the assignment and homework solutions of this class
+This folder contains all the assignment and homework solutions of this class.
+
+These following are the discussed problems in the class:
+[Minimum Number of Refueling Stops](https://leetcode.com/problems/minimum-number-of-refueling-stops/)
+[k Inverse paris array](https://leetcode.com/problems/k-inverse-pairs-array/)
+[Super Egg Drop](https://leetcode.com/problems/super-egg-drop/)
