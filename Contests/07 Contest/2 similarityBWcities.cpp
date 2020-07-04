@@ -1,59 +1,63 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int powerArrays (vector<int> &A, int n){
+const int maxn = 1009;
+int mask[maxn];   // Bitmask array
 
-    int nge[n], pge[n];
-    stack<int> s;
-    s.push(0);
-    for (int i = 1; i < n; ++i){
-        while (!s.empty() && A[s.top()]/2 < A[i]){
-            nge[ s.top() ] = i;
-            s.pop(); 
+vector<int> cities(vector<vector<int> > &A) {
+    
+    memset(mask, 0, sizeof(mask));
+    
+    for (vector<int> b : A)
+        mask[b[0]] = mask[b[0]] | (1 << (b[1] - 1));
+        
+    double maxTemp = INT_MIN;
+    vector<int> ans{INT_MAX, INT_MAX};
+    
+    for (int i = 1; i <= 1000; ++i){
+        if (mask[i] == 0)
+            continue;
+        for (int j = i+1; j <= 1000; ++j){
+            if (mask[j] == 0)
+                continue;
+            
+            int a = mask[i] | mask[j];   // OR - to get UNION
+            int b = mask[i] & mask[j];   // AND - to get INTERSECTION (COMMON)
+            
+            double a1 = __builtin_popcount(a);
+            double b1 = __builtin_popcount(b);
+            
+            double res;
+            res = b1/a1;     // Siminlarity score
+            cout<<i<<" "<<j<<" "<<a<<" "<<b<<" "<<a1<<" "<<b1<<" "<<res<<endl;
+            if (res > maxTemp){
+                maxTemp = res;
+                ans = {i,j};
+            }
+            else if (res == maxTemp){
+                
+                if (i < ans[0]){
+                    ans = {i, j};
+                }
+                else if(i == ans[0] && j < ans[1]){
+                    ans = {i, j};
+                }
+            }
         }
-        s.push(i);
     }
     
-    while (!s.empty()){
-        nge[s.top()] = n;
-        s.pop();
-    }
-    for (int x : nge)
-        cout<<x<<" ";
-    cout<<endl;
-
-
-    cout<<"Prev greater element\n";
-    s.push(n-1);
-    for (int i = n-2; i >= 0; --i){
-        while (!s.empty() && A[s.top()]/2 < A[i]){
-            pge[ s.top() ] = i;
-            s.pop();
-        }
-        s.push(i);
-    }
-    
-    while (!s.empty()){
-        pge[ s.top() ] = -1;
-        s.pop();
-    }        
-    for (int x : pge)
-        cout<<x<<" ";
-    cout<<endl;
-
-    int ans = 0;
-    for (int i = 0; i < n; ++i){
-        ans += (i-pge[i]) * (nge[i]-i) - 1;
-    }
-
     return ans;
 }
 
+
 int main(){ 
 
-    vector<int> A{6,4,9,2,3,8};
-    cout<<"\nThere are "<<powerArrays(A, A.size())<< " power arrays\n";
-    
+    vector<vector<int> > A = {{1,1}, {1,2}, {1,3}, {1,4}, {2, 5}, {2, 6}, {2, 7}, {3, 8}, {3, 9}, {3, 10}, {4, 1}};
+
+    vector<int> x = cities(A);
+    for (int i : x)
+        cout<<i<<" ";
+
         
     return 0;
 }
