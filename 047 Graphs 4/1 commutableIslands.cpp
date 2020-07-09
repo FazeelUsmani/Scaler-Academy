@@ -1,9 +1,17 @@
 int find (int parent[], int node){
-    if (node == parent[node])
-        return node;
-    parent[node] = find(parent, parent[node]);
     
-    return parent[node];
+    while (node != parent[node]){
+        parent[node] = parent[parent[node]];
+        node = parent[node];
+    }
+    
+    return node;
+  
+//     if (node == parent[node])
+//         return node;
+//     parent[node] = find(parent, parent[node]);
+    
+//     return parent[node];
 }
 
 bool myCmp(vector<int> x, vector<int> y){
