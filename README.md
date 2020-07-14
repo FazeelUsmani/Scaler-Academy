@@ -6,6 +6,11 @@ A[FILE_NAME] --> Assignment problem <br />
 HW[FILE_NAME] --> Homework problem
 
 
-After these 50 classes we had the following"
+After these 50 classes we had the following lectures:
 
 1) Computer Networks
+
+2) Operating Systems
+3) DBMS
+
+
