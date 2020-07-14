@@ -9,8 +9,10 @@ HW[FILE_NAME] --> Homework problem
 After these 50 classes we had the following lectures:
 
 1) Computer Networks
-
 2) Operating Systems
 3) DBMS
+4) Low-Level Design
+5) High-Level Design
+
 
 
