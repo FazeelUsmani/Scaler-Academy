@@ -11,8 +11,9 @@ After these 50 classes we had the following lectures:
 1) Computer Networks
 2) Operating Systems
 3) DBMS
-4) Low-Level Design
-5) High-Level Design
+4) Low Level Design
+5) High Level Design
+6) Full Stack classes (depends on choice)
 
 
 
