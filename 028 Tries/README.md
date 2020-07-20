@@ -1,7 +1,9 @@
 
 ## TRIE Implementation:
 
-Efficient Re-__trie__-val of information
+*Efficient* Re-__trie__-val of information
+
+R[problem_no] --> Remedial Class problems
 
 First refer [Binary tree implementation using 2d array](https://github.com/FazeelUsmani/Scaler-Academy/blob/master/028%20Tries/BinaryTree2dArray.cpp), likewise, we're going to use this 2d matrix to represent nodes in trie to save memory and avoid MLE (Memory Overflow Error)
 
