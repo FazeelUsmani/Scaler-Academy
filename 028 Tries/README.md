@@ -1,5 +1,4 @@
-
-## TRIE Implementation:
+# TRIE Implementation:
 
 *Efficient* Re-__trie__-val of information
 
