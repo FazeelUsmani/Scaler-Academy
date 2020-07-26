@@ -1,3 +1,3 @@
-This folder contains all the assignment and homework solutions of this class.
+In this class, we discussed UNION FIND algorithm and Kruskal's algorithm and solved some related problems
 
-![UNION-FIND ALGORITHM](C:\Users\FAZEEL USMANI\Documents\Scaler-Academy\047 Graphs 4\UNION_FIND.cpp)
+This folder contains all the assignment and homework solutions of this class.
