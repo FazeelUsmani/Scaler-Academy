@@ -31,12 +31,14 @@ int countSetBits(int n)
         // 1s in the current bit
         cnt += (totalPairs / 2) * powerOf2;
         cnt%=mod;
+        cout<<"first "<<cnt<<endl;
 
         // If the count of pairs was odd then
         // add the remaining 1s which could
-        // not be groupped together
+        // not be grouped together
         cnt += (totalPairs & 1) ? (n % powerOf2) : 0;
         cnt%=mod;
+        cout<<"second "<<cnt<<endl;
         // Next power of 2
         powerOf2 <<= 1;
     }
@@ -73,7 +75,8 @@ int solve(int A) {
 
 int main(){   
 
-    cout<<(solve(100000));
+    
+    cout<<(solve(18));
 
     return 0;
 }
