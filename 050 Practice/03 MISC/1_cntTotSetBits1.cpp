@@ -6,7 +6,6 @@ using namespace std;
 const int mod=1e9+7;
 int countSetBits(int n)
 {
-
     // Ignore 0 as all the bits are unset
     n++;
 
@@ -45,31 +44,31 @@ int countSetBits(int n)
     // Return the result
     return cnt;
 }
-int Solution::solve(int A) {
+int solve(int A) {
     return countSetBits(A);
 }
 
-int solve(int A) {
+// int solve(int A) {
 
-    int setBits[A+1] = {0};
-    setBits[0] = 0;
-    setBits[1] = 1;
-    cout<<"before loop";
+//     int setBits[A+1] = {0};
+//     setBits[0] = 0;
+//     setBits[1] = 1;
+//     cout<<"before loop";
     
-    for (int i = 2; i <= A; ++i){
-        cout<<i<<"\n";
-        int index = (i>>1);
-        setBits[i] = setBits[index] + (i&1);        
-    }
+//     for (int i = 2; i <= A; ++i){
+//         cout<<i<<"\n";
+//         int index = (i>>1);
+//         setBits[i] = setBits[index] + (i&1);        
+//     }
     
-    int totalSetBits = 0;
-    for (int x: setBits){
-        cout<<x<<" ";
-        totalSetBits += x;
-    }
+//     int totalSetBits = 0;
+//     for (int x: setBits){
+//         cout<<x<<" ";
+//         totalSetBits += x;
+//     }
     
-    return totalSetBits;
-}
+//     return totalSetBits;
+// }
 
 
 int main(){   
