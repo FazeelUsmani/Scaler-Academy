@@ -1,44 +1,53 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define MOD 1000000007
-#define ll long long
+// Scooby Doo 
+
+typedef long long ll;
+ll ans;
+
+ll power1(ll a, ll b){
+    ll res = 1;
+    a = a%1000000007;
+    while (b>0){
+        if (b&1)
+            res = (res*a)%1000000007;
+        b = b>>1;
+        a = (a*a)%1000000007;
+    }
+    return res;
+}
+
+void addDigit(int n, int pos, int tot){
+
+    ll res = 0;
+    int x = tot-pos+1;    
+
+    while (x--){
+        res = (res*10 + n)%1000000007;
+    }
+   
+    res = (res*pos)%1000000007;
+
+    ans = (ans+res) % 1000000007;
+}
 
 int solve(string A) {
-    int n = A.length();
+    ans = 0;
+    int pos = A.size();
+    int tot = pos;
     
-    vector<vector<ll> > dp(n, vector<ll> (n, 0));
-    long long ans = 0;
-    for (int i = 0; i < n; ++i){
-        dp[0][i] = int(A[i]-'0');
-        ans = (ans+dp[0][i])%MOD;
-    }
-        
-    for (ll i = 1; i < n; ++i){
-        for (ll j = i; j < n; ++j){
-            dp[i%2][j] = (dp[(i-1)%2][j-1]*10 + A[j]-'0')%MOD; 
-            ans = (ans + dp[i%2][j])%MOD;
-        }
+    for (int i = pos-1; i >= 0; i--){
+        int currNum = int(A[i]-'0');
+        addDigit(currNum, pos, tot);
+        pos--;
     }
     
-    for (ll i = 0; i < n; ++i){
-        for (ll j = 0; j < n; ++j){
-            cout<<dp[i][j]<<" ";
-        }
-        cout<<endl;
-    }
-    //597988838
-
-    return ans%MOD;
+    return ans;
 }
-int main(){   
-    //cout<<solve("972698438521");
 
-    for (int i = 0; i < 5; ++i){
-        for (int j = i; j < 5; ++j){
-            cout<<i<<j<<" ";
-        }
-        cout<<endl;
-    }
+int main(){   
+    
+    cout<<solve("12345")<<endl;
     
 
     return 0;
