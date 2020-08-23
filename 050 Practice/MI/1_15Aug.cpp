@@ -34,6 +34,8 @@ int main(){
     return 0;
 }
 
+/*
+
 Given an array of integers A of size N.
 
 Find and return how many distinct gcd( sub(A) ) values are possible, where sub(A) is any non-empty subsequence of arraya A.
@@ -73,3 +75,5 @@ Input 2:
     A = [5, 17, 3, 11]
 Output 2:
     5
+
+*/
