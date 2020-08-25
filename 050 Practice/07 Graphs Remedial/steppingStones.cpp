@@ -1,3 +1,6 @@
+#include<bits/stdc++.h>
+using namespace std;
+
 bool isStepNum(int N){
     int prevNum = -1, currNum;
     while (N){
@@ -14,7 +17,7 @@ bool isStepNum(int N){
     return true;
 }
 
-vector<int> Solution::stepnum(int A, int B) {
+vector<int> stepnum(int A, int B) {
     
     vector<int> res;
     for (int i = A; i <= B; ++i){
@@ -22,7 +25,14 @@ vector<int> Solution::stepnum(int A, int B) {
             res.push_back(i);
         }
     }
-    sort(res.begin(), res.end());
-    
+        
     return res;
+}
+
+int main(){
+    vector<int> res = stepnum(20, 50);
+    for (int &x: res)
+        cout<<x<<" ";
+
+    return 0;
 }
