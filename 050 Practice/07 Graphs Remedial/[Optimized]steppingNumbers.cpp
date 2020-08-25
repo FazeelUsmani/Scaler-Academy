@@ -29,18 +29,17 @@ void bfs(int n, int m, int num){
             q.push(stepNumB);
         }
     }
-    //cout<<"complete\n";
 }
 
 
 int main(){   
 
     ans.clear();
-    int n = 0, m = 30;
-    for (int i = 0; i < 10; ++i)
+    int n = 20, m = 300;
+    for (int i = n; i < m; ++i)
         bfs(n, m, i);
 
-    //sort(ans.begin(), ans.end());
+    sort(ans.begin(), ans.end());
 
     for (int &x: ans)
         cout<<x<<" ";
