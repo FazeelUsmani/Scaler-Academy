@@ -37,7 +37,20 @@ Node* addSameSize(Node* head1, Node* head2, int* carry){
     if (head1 == NULL && head2 == NULL)
         return NULL;
 
+    Node *ans = new Node(0);
+    ans->next = addSameSize(head1->next, head2->next, carry);
+    
+    if (ans->next != NULL){    
+        ans->data = (head1->data + head2->data + *carry)%10;
+        *carry = (head1->data + head2->data + *carry)/10;
+    }
+    else
+    {
+        ans->data = (head1->data + head2->data)%10;
+        *carry = (head1->data + head2->data)/10;        
+    }    
 
+    return ans;
 }
 
 
