@@ -33,7 +33,9 @@ void printLL(Node *head){
 }
 
 Node* addSameSize(Node* head1, Node* head2, int* carry){
-    
+
+    if (head1 == NULL && head2 == NULL)
+        return NULL;
 
 
 }
