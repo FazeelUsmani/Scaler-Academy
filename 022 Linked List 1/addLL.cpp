@@ -34,28 +34,25 @@ void printLL(Node *head){
 
 Node* addSameSize(Node* head1, Node* head2, int* carry){
 
-    if (head1 == NULL && head2 == NULL)
-        return NULL;
-
-    Node *ans = new Node(0);
-    ans->next = addSameSize(head1->next, head2->next, carry);
+    Node* temp;
+    int car = 0;
     
-    ans->data = (head1->data + head2->data + *carry)%10;
-    *carry = (head1->data + head2->data + *carry)/10;
-
-    // if (ans->next != NULL){    
-    //     ans->data = (head1->data + head2->data + *carry)%10;
-    //     *carry = (head1->data + head2->data + *carry)/10;
-    // }
-    // else
-    // {
-    //     ans->data = (head1->data + head2->data)%10;
-    //     *carry = (head1->data + head2->data)/10;        
-    // }    
-
-    return ans;
+    if (head1 == NULL || head2 == NULL)
+        return NULL;
+    
+    temp = addSameSize(head1->next, head2->next, carry);
+    car = head1->data + head2->data + (*carry);
+    head2->data = car%10;
+    (*carry) = car/10;
+    
+    return head2;
 }
 
+void addCarryToRemaining(Node* head1, Node* curr, int* carry, Node** result) 
+{ 
+    
+	
+}
 
 int main(){
 
@@ -73,6 +70,7 @@ int main(){
     
     int carry = 0;
     Node *res = addSameSize(head1, head2, &carry);
+    
     printLL(res);
         
 
