@@ -20,7 +20,7 @@ int Solution::numTrees(int A) {
     
     // Use below formula to calculate catalan number in O(N) time
     // C_n=\frac{1}{n+1}\binom{2n}{n}
-    // ans = (1/(2nCn))
+    // ans = [1/(n+1)]*[(2nCn)]
     
     ll c = binomialCoeff(2*A, A);
     
