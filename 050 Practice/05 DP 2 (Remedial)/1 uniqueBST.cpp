@@ -1,5 +1,4 @@
-int Solution::numTrees(int A) {
-    
+int Solution::numTrees(int A) {    
     if (A <= 1)
         return 1;
     
