@@ -54,20 +54,21 @@ vector<int> topologicalSort(){
 
 int main(){
 
-    // addEdge(4, 1);
-    // addEdge(4, 0);
-    // addEdge(5, 0);
-    // addEdge(5, 2);
-    // addEdge(2, 3);
-    // addEdge(3, 1);
-    // addEdge(1, 2);
-    addEdge(1, 2);
-    addEdge(1, 3);
+    addEdge(4, 1);
+    addEdge(4, 0);
+    addEdge(5, 0);
+    addEdge(5, 2);
     addEdge(2, 3);
-    addEdge(1, 4);
-    addEdge(4, 3);
-    addEdge(4, 5);
-    addEdge(3, 5);
+    addEdge(3, 1);
+    addEdge(1, 2);
+    
+    // addEdge(1, 2);
+    // addEdge(1, 3);
+    // addEdge(2, 3);
+    // addEdge(1, 4);
+    // addEdge(4, 3);
+    // addEdge(4, 5);
+    // addEdge(3, 5);
 
 
     vector<int> res = topologicalSort();
