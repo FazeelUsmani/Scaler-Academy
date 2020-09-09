@@ -27,5 +27,4 @@ We found that the count appears as 2^0, 2^1, 2^2, 2^3........ So we simply use H
 
 
 
-
 This folder contains all the assignment and homework problems
