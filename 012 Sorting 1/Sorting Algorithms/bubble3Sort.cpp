@@ -4,7 +4,7 @@ using namespace std;
 // Sorting elements alternatively
 // Odd indexed and even indexed elements are sorted seperately
 
-void bubbleSort (vector<int> A) {
+void bubble3Sort (vector<int> A) {
     
     int n = A.size();
     for (int i = 0; i < n-1; ++i){
@@ -20,7 +20,7 @@ void bubbleSort (vector<int> A) {
 
 int main(){   
     vector<int> A {4,3,5,6,7,2};
-    bubbleSort(A);
+    bubble3Sort(A);
 
     return 0;
 }
