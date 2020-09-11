@@ -1,4 +1,4 @@
-*/
+/*
 Flatten a linked list
 Problem Description
 
@@ -60,4 +60,29 @@ Explanation 1:
 
  The return linked list is the flatten sorted list.
 
-/*
+*/
+ListNode* mergeLL(ListNode* l1, ListNode* l2) {
+   if (l1 == NULL)   return l2;
+   if (l2 == NULL)   return l1;
+
+   ListNode* result;
+   if (l1->val < l2->val) {
+      result = l1;
+      result->down = merge(l1->down, l2);
+   }
+   else{
+      result = l2;
+      result->down = merge(l1, l2->down);
+   }
+
+   result->right = NULL;
+   
+   return result;
+}
+
+ListNode* flatten(ListNode* root) {
+   if (root == NULL || root->right == NULL)
+      return root;
+   
+   return mergeLL (root, flatten(root->right) );
+}
