@@ -14,4 +14,5 @@ __Recursive_Solution:__ Inplace converting binary tree
 4) concatenate left list and root then to right list
 
 
-![image](img/BT2Dll (1).jpg)
+![image](https://github.com/FazeelUsmani/Scaler-Academy/blob/master/027%20Problem%20On%20Trees/img/BT2DLL%20(1).jpg)
+![rough work](https://github.com/FazeelUsmani/Scaler-Academy/blob/master/027%20Problem%20On%20Trees/img/BT2DLL%20(2).jpg)
