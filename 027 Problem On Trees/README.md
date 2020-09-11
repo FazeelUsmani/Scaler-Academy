@@ -14,3 +14,4 @@ __Recursive_Solution:__ Inplace converting binary tree
 4) concatenate left list and root then to right list
 
 
+![image](img/BT2Dll (1).jpg)
