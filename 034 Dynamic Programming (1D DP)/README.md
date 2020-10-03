@@ -9,4 +9,3 @@ Here is the code: [[optimized] HW4 MaximumSum](https://github.com/FazeelUsmani/S
 
 But this approach fails when we have more than 3 integers i.e. (B, C, D, E, F....). So, its better to have a look at both of them
 
-This folder contains all the solved homework and assignment given in this class
