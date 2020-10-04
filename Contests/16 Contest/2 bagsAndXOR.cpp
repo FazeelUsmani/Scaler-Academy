@@ -26,15 +26,6 @@ int solve(vector<int> &A)
         j--;
     }
 
-    for (int x : red)
-        cout << x << " ";
-    cout << endl;
-    for (int y : blue)
-        cout << y << " ";
-
-    cout << endl
-         << endl;
-
     i = 0;
     j = blue.size() - 1;
 
