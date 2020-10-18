@@ -1,5 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
+
+// This solution is accepted on test but WA on submission
+
 int check(string A, string B)
 {
     int n = A.size();
