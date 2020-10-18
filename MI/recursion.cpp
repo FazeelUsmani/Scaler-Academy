@@ -172,3 +172,25 @@ int Solution::solve(int A, vector<int> &B, vector<vector<int> > &C) {
     
     return ans;
 }
+
+
+vector<int> ans;
+
+void backtrack(int A, int &num) {
+    if (A == 0){
+        ans.push_back(num);
+        return;
+    }
+    
+    backtrack(A-1, num);
+    num = num ^ (1<<(A-1));
+    backtrack(A-1, num);
+}
+
+vector<int> Solution::grayCode(int A) {
+    
+    int num = 0;
+    backtrack(A, num);
+    
+    return ans;
+}
