@@ -13,7 +13,7 @@ After these 50 classes we had the following lectures:
 3) DBMS - 5 classes
 4) Low Level Design
 5) High Level Design
-6) Back-end classes (depends on choice)
+6) Devclasses (full stack or backend)
 
 
 
