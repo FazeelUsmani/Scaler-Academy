@@ -84,15 +84,15 @@ int solve1(vector<vector<int>> &A, int row, int mask)
     if (dp[row][mask] != -1)
         return dp[row][mask];
     int ans = INT_MIN;
-    for (int col = 0; col < A.size(); ++col)
+    for (int col = 0; col < A[0].size(); ++col)
     {
-        if ((mask >> col) & 1)
+        if (((mask >> col) & 1) == 1)
             continue;
         ans = max(ans, A[row][col] + solve1(A, row + 1, (mask | (1 << col))));
     }
     dp[row][mask] = ans;
 
-    return dp[0][0];
+    return ans;
 }
 
 int main()
@@ -101,19 +101,10 @@ int main()
     vector<vector<int>> A{{1, 2, 5}, {1, 15, 20}, {2, 1, 10}};
 
     // Backtracking solution
-    // cout << "Ans is " << solve(A, 0, 0) << endl;
+    cout << "Ans is " << solve(A, 0, 0) << endl;
 
     // Memoized solution
     cout << "Memoized ans is " << solve1(A, 0, 0) << endl;
-
-    for (int i = 0; i < dp.size(); ++i)
-    {
-        for (int j = 0; j < dp[0].size(); ++j)
-        {
-            cout << dp[i][j] << " ";
-        }
-        cout << endl;
-    }
 
     return 0;
 }

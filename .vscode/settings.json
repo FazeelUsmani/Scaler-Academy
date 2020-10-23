@@ -5,6 +5,12 @@
         "algorithm": "cpp",
         "chrono": "cpp",
         "limits": "cpp",
-        "random": "cpp"
+        "random": "cpp",
+        "initializer_list": "cpp",
+        "list": "cpp",
+        "type_traits": "cpp",
+        "xhash": "cpp",
+        "xstring": "cpp",
+        "xutility": "cpp"
     }
 }
