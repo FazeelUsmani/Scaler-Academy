@@ -95,6 +95,50 @@ int solve1(vector<vector<int>> &A, int row, int mask)
     return ans;
 }
 
+// Optimized solution
+
+// Do we really need to have row?
+// Can we find row by using mask?
+// Yes, row is nothing but set bits in mask which can be found
+// in O(no. of set bits) time using Barn Karninghan's algorithm
+
+// Using Barn Karninghan's algorithm
+int countBits(int n)
+{
+    int cnt = 0;
+    while (n > 0)
+    {
+        n = n & (n - 1);
+        cnt++;
+    }
+
+    return cnt;
+}
+
+int dp2[8];
+
+int solve2(vector<vector<int>> &A, int mask)
+{
+    int row = countBits(mask);
+
+    if (row == A.size())
+        return 0;
+
+    if (dp2[mask] != -1)
+        return dp2[mask];
+
+    int ans = INT_MIN;
+    for (int col = 0; col < A.size(); ++col)
+    {
+        if ((mask >> col) & 1)
+            continue;
+        ans = max(ans, A[row][col] + solve2(A, mask | (1 << col)));
+    }
+    dp2[mask] = ans;
+
+    return ans;
+}
+
 int main()
 {
     int ans = INT_MIN;
@@ -105,6 +149,10 @@ int main()
 
     // Memoized solution
     cout << "Memoized ans is " << solve1(A, 0, 0) << endl;
+
+    memset(dp2, -1, sizeof(dp2));
+    // Optimized solution
+    cout << "Optimized ans is " << solve2(A, 0) << endl;
 
     return 0;
 }
