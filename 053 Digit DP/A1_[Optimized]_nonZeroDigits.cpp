@@ -71,9 +71,6 @@ vector<int> solve(vector<string> &A)
         result.push_back(it - it1);
     }
 
-    for (int x : dp)
-        cout << x << ", ";
-
     return result;
 }
 
@@ -83,7 +80,6 @@ int main()
     vector<string> A{"11111", "22222"};
     vector<int> ans = solve(A);
 
-    cout << "aNS I S " << endl;
     for (int x : ans)
         cout << x << " ";
 
