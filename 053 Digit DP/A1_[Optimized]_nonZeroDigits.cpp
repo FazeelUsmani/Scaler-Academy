@@ -1,3 +1,6 @@
+#include <bits/stdc++.h>
+using namespace std;
+
 int N;
 string v;
 vector<long long> dp;
@@ -37,7 +40,7 @@ void count1(long long nonZero, int len, long long val)
     }
 }
 
-vector<int> Solution::solve(vector<string> &A)
+vector<int> solve(vector<string> &A)
 {
     vector<int> result;
     int currAns;
@@ -69,4 +72,15 @@ vector<int> Solution::solve(vector<string> &A)
     }
 
     return result;
+}
+
+int main()
+{
+    vector<int> A{"1", "1000"};
+    vector<int> ans = solve(A);
+
+    for (int x : ans)
+        cout << x << " ";
+
+    return 0;
 }
