@@ -5,15 +5,14 @@ This repository contains all the assignment and homework solutions solved during
 A[FILE_NAME] --> Assignment problem <br />
 HW[FILE_NAME] --> Homework problem
 
+To visualize data structures use this [website](https://visualgo.net/en)
 
 After these 50 classes we had the following lectures:
 
-1) Computer Networks - 6 classes
-2) Operating Systems - 5 classes
-3) DBMS - 5 classes
-4) Low Level Design
-5) High Level Design
-6) Devclasses (full stack or backend)
-7) Advanced DS Algo classes (DP with BitMask, DP on digits)
-
-
+1. Computer Networks - 6 classes
+2. Operating Systems - 5 classes
+3. DBMS - 5 classes
+4. Low Level Design
+5. High Level Design
+6. Devclasses (full stack or backend)
+7. Advanced DS Algo classes (DP with BitMask, DP on digits)
