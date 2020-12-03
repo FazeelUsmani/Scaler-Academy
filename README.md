@@ -15,4 +15,4 @@ After these 50 classes we had the following lectures:
 4. Low Level Design
 5. High Level Design
 6. Devclasses (full stack or backend)
-7. Advanced DS Algo classes (DP with BitMask, DP on digits, quad trees)
+7. Advanced DS Algo classes (DP with BitMask, DP on digits, Quad Trees)
