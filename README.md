@@ -5,7 +5,7 @@ This repository contains all the assignment and homework solutions solved during
 A[FILE_NAME] --> Assignment problem <br />
 HW[FILE_NAME] --> Homework problem
 
-To visualize data structures use this [VisuAlgo](https://visualgo.net/en)
+To visualize data structures use [VisuAlgo](https://visualgo.net/en)
 
 After these 50 classes we had the following lectures:
 
