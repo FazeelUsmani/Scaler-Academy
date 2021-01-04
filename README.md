@@ -19,6 +19,6 @@ After these 50 classes we had the following lectures:
 7. Advanced DS Algo classes (DP with BitMask, DP on digits, Quad Trees)
 
 
-Use the below link to get Rs 10,000/- discount on the course fee
+Use the below link to get __₹ 10,000/-__ discount on the course fee
 
  __Link: https://www.scaler.com/academy?unlock_code=FAZE13AA__
