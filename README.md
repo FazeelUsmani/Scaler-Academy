@@ -21,4 +21,4 @@ After these 50 classes we had the following lectures:
 
 Use the below link to get Rs 10,000/- cashback
 
- **Link: https://www.scaler.com/academy?unlock_code=FAZE13AA
+ __Link: https://www.scaler.com/academy?unlock_code=FAZE13AA__
