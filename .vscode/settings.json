@@ -11,6 +11,7 @@
         "type_traits": "cpp",
         "xhash": "cpp",
         "xstring": "cpp",
-        "xutility": "cpp"
+        "xutility": "cpp",
+        "deque": "cpp"
     }
 }
