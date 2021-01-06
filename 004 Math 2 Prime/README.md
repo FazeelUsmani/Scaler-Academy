@@ -1,1 +1,1 @@
-This folder contains all assignments and homeworks of the topics prime, factorization and Sieve
+This folder contains all assignments and homeworks of the topic __prime factorization and Sieve theorem__
