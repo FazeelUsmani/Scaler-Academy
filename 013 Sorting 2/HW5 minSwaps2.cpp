@@ -53,18 +53,18 @@ Explanation 2:
  You cannot sort it with lesser than 2 swaps.
  */
 
-int Solution::solve(vector<int> &A) {
-    
-    int cnt=0, temp, temp2;
-    for (int i = 0; i < A.size(); ++i) {
-        while (A[i] != i) {
-            temp = A[i];
-            temp2 = A[A[i]];
-            A[i] = temp2;
-            A[temp] = temp;
-            cnt++;
+int Solution::solve(vector<int> &A)
+{
+
+    int ans = 0;
+    for (int i = 0; i < A.size(); ++i)
+    {
+        while (A[i] != i)
+        {
+            ans++;
+            swap(A[i], A[A[i]]);
         }
     }
-    
-    return cnt;
+
+    return ans;
 }
