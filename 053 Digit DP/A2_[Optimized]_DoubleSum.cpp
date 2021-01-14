@@ -1,6 +1,69 @@
 /*
 
-Logic: The basic idea is while traversing through the numbers we can keep another 
+Palindromic Beauty
+Problem Description
+
+The palindromic beauty of a set of numbers is the number of palindromes in a set. A number is a palindrome that remains the same when its digits are reversed. The number should be considered without leading zeroes.
+
+You have to solve q queries. You are given a list A of strings. List A contains numbers in string format. The ith query consists of numbers A[2*i] and A[2*i+1]. The answer to ith query is the palindromic beauty of set of numbers from A[2*i] to A[2*i+1]. Since the answer can be large, return it modulo 109 + 7.
+
+
+
+Problem Constraints
+2 <= |A| <= 400
+
+|A| is even
+
+1 <= |A[i]| <= 17
+
+A[i] does not contain leading zeroes 
+
+
+
+Input Format
+The first line of input contains A- list of numbers in string format.
+
+
+
+Output Format
+Return  a vector of size q- ith of which contains the answer for ith query.
+
+
+
+Example Input
+Input 1:
+
+  A = ["1", "5", "7", "12"]
+Input 2:
+
+  A = ["1", "100"]
+
+
+Example Output
+Output 1:
+
+  [5, 4]
+Output 2:
+
+  18
+
+
+Example Explanation
+Explanation 1:
+
+  In the first query, all numbers from 1 to 5 are palindromes.
+  In the second query, 7, 8, 9 and 11 are palindromes.   
+Explanation 2:
+
+  Palindromes in the range are- 
+  1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 22, 33, 44, 55, 66, 77, 88, 99
+
+*/
+
+/*
+Solution Logic: 
+
+The basic idea is while traversing through the numbers we can keep another 
 pointer J (where J initially points to the last digit of the number). 
 This pointer will gradually decrease. We will simply try to put the digit 
 (that we are currently generating in our recursive function) at the Jth position 
