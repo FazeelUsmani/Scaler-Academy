@@ -13,5 +13,6 @@
         "xstring": "cpp",
         "xutility": "cpp",
         "deque": "cpp"
-    }
+    },
+    "python.analysis.autoImportCompletions": false
 }
